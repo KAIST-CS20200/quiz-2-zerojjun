@@ -10,7 +10,7 @@ open System
 let f n =
     if n % 2UL = 0UL then n / 2UL else 3UL * n + 1UL
 
-let collatz (n: int) =
+let collatz n: int =
     let rec iter cnt n =
         let result = f n
         if result = 1UL then cnt else iter (cnt + 1) result
